@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix './snippets/**/*.{js,ts}' && prettier --write './snippets/**/*.{js,ts}'"
   },
   "keywords": [
     "javascript",
@@ -16,9 +17,19 @@
     "type": "git",
     "url": "https://github.com/mktbsh/google-apps-script-snippets"
   },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "semi": true,
+    "endOfLine": "lf",
+    "quoteProps": "as-needed",
+    "trailingComma": "none"
+  },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.56",
-    "clasp": "^1.0.0",
-    "typescript": "^4.9.4"
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.1"
   }
 }
