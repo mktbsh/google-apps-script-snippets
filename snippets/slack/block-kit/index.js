@@ -11,18 +11,29 @@ function test() {
     });
 }
 
-const useSlackBlockKit = () => {
+const useSlackBlockKit = (props) => {
   const state = Symbol('state');
 
   class BlockKit {
     constructor() {
-      this.clear();
+      this[state] = props || {
+        blocks: []
+      };
     }
 
     clear() {
       this[state] = {
         blocks: []
       };
+    }
+
+    /**
+     * clone BlockKit object
+     * @returns {BlockKit}
+     */
+    clone() {
+      const payload = this.copyPayload();
+      return useSlackBlockKit(payload);
     }
 
     /**
