@@ -1,0 +1,24 @@
+{
+  "name": "google-apps-script-snippets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "google-apps-script"
+  ],
+  "author": "mktbsh <contact@mktbsh.com> (https://mktbsh.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mktbsh/google-apps-script-snippets"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.56",
+    "clasp": "^1.0.0",
+    "typescript": "^4.9.4"
+  }
+}

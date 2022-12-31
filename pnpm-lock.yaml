@@ -1,0 +1,28 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@types/google-apps-script': ^1.0.56
+  clasp: ^1.0.0
+  typescript: ^4.9.4
+
+devDependencies:
+  '@types/google-apps-script': 1.0.56
+  clasp: 1.0.0
+  typescript: 4.9.4
+
+packages:
+
+  /@types/google-apps-script/1.0.56:
+    resolution: {integrity: sha512-3YGOtRlnWPSARl/n2BKt0qiIA6Y3/5BLC2zH9s/jcu+1rpxR07noLCFxTZ2BQBIfDl6+Vs9iKjLTgdbbL8q/mg==}
+    dev: true
+
+  /clasp/1.0.0:
+    resolution: {integrity: sha512-JkgxdZvYBtqIlGPvC5oRZ548eHpfx+81z5GXckpXcMkRTZDddkQfwK60w1YE32n8ovGoSW88pbsIvCPOKM6hyA==}
+    requiresBuild: true
+    dev: true
+
+  /typescript/4.9.4:
+    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
